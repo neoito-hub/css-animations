@@ -1,13 +1,7 @@
 
-# CSS Animation Hackathon
+# CSS Animations
 
-```
-Date: 2018-03-17
-Venue: Neoito Office
-Time: 11:00 AM - 3:00 PM
-```
-
-## Challenges
+## Lists
 
 * Listing Data
 * Animated Icons
@@ -19,32 +13,11 @@ Time: 11:00 AM - 3:00 PM
 * Button Click
 * Input field Validation
 
-## Teams
-
-### Team Abraham
-
-* Ashish
-* Vignesh
-* Abin
-
-### Team Daliya
-
-* Akhila
-* Safal
-* Jishnu
-* Deepak
-
-### Team Paulson
-
-* Akash
-* Sneha
-* Vibin
-
 ## Run
 
 `$ git clone https://github.com/neoito-hub/hackathon-css-animation-20180319.git`
 
-`$ cd hackathon-css-animation-20180319`
+`$ cd css-animations'
 
 `$ sudo npm install -g http-server`
 
