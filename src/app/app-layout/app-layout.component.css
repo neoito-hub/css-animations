@@ -1,0 +1,12 @@
+.animation-list h1 {
+  text-align: center;
+  margin-top: 3em;
+}
+.animation-list li {
+  padding: 36px 38px 0px 17px;
+  cursor: pointer;
+}
+.animation-list ul {
+  width: 50%;
+  margin: 0 auto;
+}
