@@ -1,4 +1,4 @@
-# Ssssssssss
+# Angular CLI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
@@ -24,4 +24,55 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# CSS Animation Hackathon
+
+```
+Date: 2018-03-17
+Venue: Neoito Office
+Time: 11:00 AM - 3:00 PM
+```
+
+## Challenges
+
+* Listing Data
+* Animated Icons
+* 404 Page
+* Email Unsubscription
+* Hover Effects
+* Menu Animations
+* Validation Effects
+* Button Click
+* Input field Validation
+
+## Teams
+
+### Team Abraham
+
+* Ashish
+* Vignesh
+* Abin
+
+### Team Daliya
+
+* Akhila
+* Safal
+* Jishnu
+* Deepak
+
+### Team Paulson
+
+* Akash
+* Sneha
+* Vibin
+
+## Run
+
+`$ git clone https://github.com/neoito-hub/hackathon-css-animation-20180319.git`
+
+`$ cd hackathon-css-animation-20180319`
+
+`$ sudo npm install -g http-server`
+
+`$ http-server -p 8080`
