@@ -11,7 +11,10 @@ div {
     display: block;
     position: absolute;
   }
-  
+  .wrapper{
+      background: #303030;
+      float: left;
+  }
   body {
     position: absolute;
     top: 0;
@@ -25,15 +28,8 @@ div {
     overflow-x: hidden;
   }
   
-  .wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 78vw;
-    height: 70vh;
-    border: 0;
-    transform: translate(-50%, -50%);
-    overflow: visible;
+  .wrapper {    
+  
   }
   .wrapper .icon {
     position: relative;
