@@ -1,0 +1,1861 @@
+div {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0.1vw solid #a78247;
+    overflow: hidden;
+  }
+  div:before, div:after {
+    content: '';
+    display: block;
+    position: absolute;
+  }
+  
+  body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #303030;
+    overflow-x: hidden;
+  }
+  
+  .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 78vw;
+    height: 70vh;
+    border: 0;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+  }
+  .wrapper .icon {
+    position: relative;
+    display: inline-block;
+    width: 12vw;
+    height: 12vw;
+    margin: 2.5vw 1.5vw;
+    border: 0;
+    overflow: visible;
+  }
+  .wrapper .icon .moon, .wrapper .icon .planetoid, .wrapper .icon .planet {
+    border-radius: 50%;
+    background: #303030;
+  }
+  .wrapper .icon.icon1 .moon.top {
+    top: 10%;
+    right: 5%;
+    width: 12%;
+    height: 12%;
+    animation: icon1moontop 5s ease 0s infinite;
+  }
+  .wrapper .icon.icon1 .moon.bottom {
+    top: 75%;
+    left: 15%;
+    width: 8%;
+    height: 8%;
+    animation: icon1moonbottom 5s ease 0s infinite;
+  }
+  .wrapper .icon.icon1 .planet {
+    top: 20%;
+    left: 20%;
+    width: 62%;
+    height: 62%;
+  }
+  .wrapper .icon.icon1 .planet .line {
+    height: 0.1vw;
+    border-color: #a78247 transparent transparent transparent;
+    overflow: visible;
+  }
+  .wrapper .icon.icon1 .planet .line.line1 {
+    top: 15%;
+    left: 0;
+    width: 60%;
+  }
+  .wrapper .icon.icon1 .planet .line.line2 {
+    top: 30%;
+    left: 0;
+    width: 20%;
+  }
+  .wrapper .icon.icon1 .planet .line.line2:after {
+    top: -0.1vw;
+    left: 140%;
+    height: 0.1vw;
+    width: 60%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon1 .planet .line.line3 {
+    top: 38%;
+    right: 0;
+    width: 40%;
+  }
+  .wrapper .icon.icon1 .planet .line.line4 {
+    top: 48%;
+    right: 0;
+    width: 18%;
+  }
+  .wrapper .icon.icon1 .planet .line.line5 {
+    top: 57%;
+    left: 0;
+    width: 30%;
+  }
+  .wrapper .icon.icon1 .planet .line.line5:after {
+    top: -0.1vw;
+    left: 140%;
+    height: 0.1vw;
+    width: 40%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon1 .planet .line.line6 {
+    top: 68%;
+    left: 0;
+    width: 70%;
+  }
+  .wrapper .icon.icon1 .planet .line.line7 {
+    top: 80%;
+    right: 0;
+    width: 30%;
+  }
+  .wrapper .icon.icon1 .planet .line.line7:after {
+    top: -0.1vw;
+    left: -80%;
+    height: 0.1vw;
+    width: 40%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon2 .planetoid {
+    top: 15%;
+    right: 9%;
+    width: 10%;
+    height: 10%;
+    overflow: visible;
+    animation: icon2planetoid 5s linear 1s infinite;
+  }
+  .wrapper .icon.icon2 .planetoid:after {
+    top: -35%;
+    left: -35%;
+    width: 1%;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+  }
+  .wrapper .icon.icon2 .planet {
+    top: 20%;
+    left: 17%;
+    width: 63%;
+    height: 63%;
+  }
+  .wrapper .icon.icon2 .planet:after {
+    top: 10%;
+    left: 10%;
+    width: 70%;
+    height: 70%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+    border-color: #a78247 transparent transparent transparent;
+    transform: rotate(-50deg);
+  }
+  .wrapper .icon.icon2 .ring {
+    top: 40%;
+    left: 10%;
+    width: 77.5%;
+    height: 25%;
+    border-radius: 50%;
+    border-color: transparent #a78247 #a78247 #a78247;
+    transform: rotate(-17deg);
+    animation: icon2ring 5s linear 0s alternate infinite;
+  }
+  .wrapper .icon.icon3 .top {
+    top: -10%;
+    left: 5%;
+    width: 66%;
+    height: 66%;
+    transform: rotate(-30deg);
+    border-color: transparent transparent #a78247 transparent;
+  }
+  .wrapper .icon.icon3 .top .visor {
+    top: 44%;
+    left: 3%;
+    width: 88%;
+    height: 88%;
+    border-radius: 50%;
+  }
+  .wrapper .icon.icon3 .top .visor:after {
+    top: 10%;
+    left: 10%;
+    width: 70%;
+    height: 70%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+    border-color: #a78247 transparent transparent transparent;
+    transform: rotate(-50deg);
+  }
+  .wrapper .icon.icon3 .top .hood {
+    top: 35%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    border-color: transparent transparent transparent #a78247;
+    transform-origin: left bottom;
+    animation: icon3hood 5s linear 0s alternate infinite;
+  }
+  .wrapper .icon.icon3 .top .hood:after {
+    top: 0;
+    left: -82%;
+    width: 150%;
+    padding-top: 150%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+  }
+  .wrapper .icon.icon3 .middle {
+    top: 42%;
+    left: 47.5%;
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    background: #303030;
+    overflow: visible;
+    transform: rotate(-30deg);
+    animation: icon3middle 15s linear 0s infinite;
+  }
+  .wrapper .icon.icon3 .middle:before {
+    top: 37%;
+    left: -55%;
+    width: 40%;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon3 .bottom {
+    top: 52%;
+    left: 30%;
+    width: 66%;
+    height: 25%;
+    border-color: #a78247 transparent transparent transparent;
+    transform: rotate(-30deg);
+  }
+  .wrapper .icon.icon3 .bottom .neck {
+    top: -100%;
+    left: 0;
+    width: 95%;
+    height: 150%;
+    transform: rotate(12deg);
+    border-color: transparent transparent #a78247 transparent;
+  }
+  .wrapper .icon.icon3 .bottom .neck:after {
+    top: -37%;
+    left: 0;
+    width: 95%;
+    padding-top: 100%;
+    border-radius: 50%;
+    border: 0.1vw solid #a78247;
+  }
+  .wrapper .icon.icon3 .bottom .line {
+    top: 60%;
+    left: 0;
+    width: 85%;
+    height: 1%;
+    transform: rotate(12.5deg);
+    border-color: transparent transparent #a78247 transparent;
+  }
+  .wrapper .icon.icon4 .planetoid.top {
+    top: 10%;
+    left: 12%;
+    width: 8%;
+    height: 8%;
+    overflow: visible;
+    transform-origin: -50% -50%;
+    animation: icon4planet 5s linear 0s infinite;
+  }
+  .wrapper .icon.icon4 .planetoid.top:after {
+    top: 83%;
+    left: -48%;
+    width: 1%;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+  }
+  .wrapper .icon.icon4 .planetoid.middle {
+    top: 35%;
+    left: 54%;
+    width: 15%;
+    height: 15%;
+    overflow: visible;
+    transform-origin: -50% 100%;
+    animation: icon4planet 10s ease-out 0s infinite;
+  }
+  .wrapper .icon.icon4 .planetoid.middle:before {
+    top: -20%;
+    left: -20%;
+    width: 50%;
+    padding-top: 50%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+    background: #303030;
+    transform-origin: 50% 70%;
+    animation: icon4planet 10s ease-out 0s infinite;
+  }
+  .wrapper .icon.icon4 .planetoid.bottom {
+    top: 61%;
+    left: 31%;
+    width: 9%;
+    height: 9%;
+    overflow: visible;
+    transform-origin: 150% -100%;
+    animation: icon4planet 10s ease-out 0s infinite;
+  }
+  .wrapper .icon.icon4 .planetoid.bottom:after {
+    top: -28%;
+    left: 122%;
+    width: 1%;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+    transform-origin: 500% 500%;
+    animation: icon4planet 10s ease-out 0s infinite;
+  }
+  .wrapper .icon.icon4 .planet {
+    top: 20%;
+    left: 18%;
+    width: 65%;
+    height: 65%;
+    overflow: visible;
+    animation: icon4planet 5s linear 0s infinite;
+  }
+  .wrapper .icon.icon4 .planet:after {
+    top: 75%;
+    left: 75%;
+    width: 20%;
+    height: 20%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+    background: #303030;
+  }
+  .wrapper .icon.icon5 .planet {
+    top: 15%;
+    left: 25%;
+    width: 62%;
+    height: 62%;
+    border-color: #a78247 #a78247 #a78247 transparent;
+    transform: rotate(-47deg);
+    overflow: visible;
+  }
+  .wrapper .icon.icon5 .planet:after {
+    top: -25%;
+    left: 50%;
+    width: 1%;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+  }
+  .wrapper .icon.icon5 .rocket {
+    top: 0;
+    left: 33%;
+    width: 40%;
+    height: 100%;
+    border-color: transparent;
+    transform: rotate(47deg);
+  }
+  .wrapper .icon.icon5 .rocket .body {
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 90%;
+    border-color: transparent;
+    animation: icon5body 0.5s ease infinite;
+  }
+  .wrapper .icon.icon5 .rocket .body:before, .wrapper .icon.icon5 .rocket .body:after {
+    top: -10%;
+    width: 200%;
+    height: 118%;
+    border-radius: 50%;
+    border: 0.1vw solid #a78247;
+  }
+  .wrapper .icon.icon5 .rocket .body:after {
+    left: -110%;
+  }
+  .wrapper .icon.icon5 .rocket .thruster.left, .wrapper .icon.icon5 .rocket .thruster.right {
+    top: 60%;
+    left: 7.5%;
+    width: 25%;
+    height: 25%;
+    border-color: transparent;
+  }
+  .wrapper .icon.icon5 .rocket .thruster.left:before, .wrapper .icon.icon5 .rocket .thruster.left:after, .wrapper .icon.icon5 .rocket .thruster.right:before, .wrapper .icon.icon5 .rocket .thruster.right:after {
+    border-radius: 50%;
+    border: 0.1vw solid #a78247;
+  }
+  .wrapper .icon.icon5 .rocket .thruster.left:before, .wrapper .icon.icon5 .rocket .thruster.right:before {
+    top: -10%;
+    width: 200%;
+    height: 120%;
+  }
+  .wrapper .icon.icon5 .rocket .thruster.left:after, .wrapper .icon.icon5 .rocket .thruster.right:after {
+    top: 60%;
+    left: 30%;
+    width: 132%;
+    padding-top: 132%;
+  }
+  .wrapper .icon.icon5 .rocket .thruster.right {
+    left: 64.5%;
+    transform: rotatey(180deg);
+  }
+  .wrapper .icon.icon5 .rocket .thruster.mid {
+    top: 60%;
+    left: 23%;
+    width: 51%;
+    height: 12%;
+    border-color: transparent;
+  }
+  .wrapper .icon.icon5 .rocket .thruster.mid:before {
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding-top: 90%;
+    border-radius: 50%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 #a78247 transparent #a78247;
+  }
+  .wrapper .icon.icon5 .line {
+    height: 1%;
+    border-color: #a78247 transparent transparent transparent;
+    transform: rotate(-45deg);
+    transform-origin: top right;
+    overflow: visible;
+  }
+  .wrapper .icon.icon5 .line:before {
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon5 .line.left {
+    width: 24%;
+    top: 60%;
+    left: 4%;
+    animation: icon5line1 0.5s ease infinite reverse;
+  }
+  .wrapper .icon.icon5 .line.left:before {
+    top: -15%;
+    left: -60%;
+    width: 20%;
+  }
+  .wrapper .icon.icon5 .line.mid {
+    width: 44%;
+    top: 50%;
+    left: 5.5%;
+    animation: icon5line2 0.5s ease infinite;
+  }
+  .wrapper .icon.icon5 .line.mid:before {
+    top: -105%;
+    left: 110%;
+    width: 10%;
+  }
+  .wrapper .icon.icon5 .line.right {
+    width: 14%;
+    top: 80%;
+    left: 17%;
+    animation: icon5line3 0.5s ease 1s infinite reverse;
+  }
+  .wrapper .icon.icon5 .line.right:before {
+    width: 0;
+    border-color: transparent;
+  }
+  .wrapper .icon.icon6 .moon.top {
+    top: 15%;
+    left: 10%;
+    width: 8%;
+    height: 8%;
+    animation: icon6moontop 5s ease 0s infinite;
+  }
+  .wrapper .icon.icon6 .moon.bottom {
+    top: 85%;
+    right: 5%;
+    width: 1%;
+    height: 1%;
+    animation: icon6moonbottom 5s ease 0s infinite;
+  }
+  .wrapper .icon.icon6 .planet {
+    top: 25%;
+    left: 24%;
+    width: 63%;
+    height: 63%;
+  }
+  .wrapper .icon.icon6 .ring {
+    top: 45%;
+    left: 15%;
+    width: 80%;
+    height: 25%;
+    border-radius: 50%;
+    border-color: transparent #a78247 #a78247 #a78247;
+    transform: rotate(17deg);
+    animation: icon6ring 5s linear 0s infinite alternate;
+  }
+  .wrapper .icon.icon6 .ring.planet {
+    top: 62.5%;
+    left: 40%;
+    width: 8%;
+    height: 8%;
+    border-color: #a78247;
+    background: #303030;
+    z-index: 1;
+    overflow: visible;
+    animation: icon6ringplanet 5s ease 0s infinite;
+  }
+  .wrapper .icon.icon6 .ring.planet:after {
+    top: -55%;
+    left: 80%;
+    width: 1%;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+  }
+  .wrapper .icon.icon6 .planetoid {
+    top: 25%;
+    left: 70%;
+    width: 20%;
+    height: 20%;
+    overflow: visible;
+    background: #303030;
+  }
+  .wrapper .icon.icon6 .planetoid:before {
+    top: -25%;
+    left: -25%;
+    width: 150%;
+    padding-top: 150%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+    border-color: #a78247 #a78247 transparent transparent;
+    transform: rotate(55deg);
+    background: transparent;
+  }
+  .wrapper .icon.icon6 .planetoid:after {
+    top: 100%;
+    left: 5%;
+    width: 30%;
+    padding-top: 15%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+    border-color: transparent transparent #a78247 transparent;
+    transform: rotate(35deg);
+    background: transparent;
+  }
+  .wrapper .icon.icon7 .telescope {
+    top: 15%;
+    left: 10%;
+    width: 75%;
+    height: 33%;
+    transform: rotate(-17deg);
+    border-color: transparent;
+    animation: icon7telescope 5s ease 0s infinite alternate;
+  }
+  .wrapper .icon.icon7 .telescope:before, .wrapper .icon.icon7 .telescope:after {
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon7 .telescope:before {
+    width: 25%;
+    left: 60%;
+  }
+  .wrapper .icon.icon7 .telescope:after {
+    bottom: 15%;
+    width: 15%;
+    left: 65%;
+  }
+  .wrapper .icon.icon7 .telescope .body {
+    top: 20%;
+    left: 10%;
+    width: 75%;
+    height: 45%;
+    overflow: visible;
+  }
+  .wrapper .icon.icon7 .telescope .body .line {
+    border-color: #a78247 transparent transparent transparent;
+    transform: rotate(90deg);
+  }
+  .wrapper .icon.icon7 .telescope .body .line.line1 {
+    top: 45%;
+    left: -5%;
+    width: 40%;
+  }
+  .wrapper .icon.icon7 .telescope .body .line.line2 {
+    top: 45%;
+    left: 20%;
+    width: 28%;
+  }
+  .wrapper .icon.icon7 .telescope .body .line.line3 {
+    top: 45%;
+    left: 45%;
+    width: 28%;
+  }
+  .wrapper .icon.icon7 .telescope .body .line.line4 {
+    top: 45%;
+    left: 65%;
+    width: 28%;
+  }
+  .wrapper .icon.icon7 .telescope .lens {
+    top: 10%;
+    right: 0;
+    width: 16%;
+    height: 62%;
+  }
+  .wrapper .icon.icon7 .tripod {
+    top: 35%;
+    left: 30%;
+    width: 45%;
+    height: 45%;
+    border-color: transparent;
+  }
+  .wrapper .icon.icon7 .tripod .anchor {
+    left: 40%;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  .wrapper .icon.icon7 .tripod .foot {
+    top: 20%;
+    left: 50%;
+    height: 1%;
+    border-color: #a78247 transparent transparent transparent;
+    transform-origin: top left;
+  }
+  .wrapper .icon.icon7 .tripod .foot.left {
+    width: 92%;
+    transform: rotate(115deg);
+  }
+  .wrapper .icon.icon7 .tripod .foot.mid {
+    width: 84%;
+    transform: rotate(90deg);
+  }
+  .wrapper .icon.icon7 .tripod .foot.right {
+    width: 92%;
+    transform: rotate(65deg);
+  }
+  .wrapper .icon.icon7 .ground {
+    top: 80%;
+    left: 30%;
+    width: 45%;
+    height: 1%;
+    border-color: #a78247 transparent transparent transparent;
+    overflow: visible;
+  }
+  .wrapper .icon.icon7 .ground:after {
+    top: -10%;
+    left: 115%;
+    width: 8%;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon8 .moon.top {
+    top: 15%;
+    left: 10%;
+    width: 8%;
+    height: 8%;
+    overflow: visible;
+    animation: icon8moontop 2.5s linear 0s infinite;
+  }
+  .wrapper .icon.icon8 .moon.top:before {
+    top: 120%;
+    left: -30%;
+    width: 1%;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+  }
+  .wrapper .icon.icon8 .moon.bottom {
+    top: 85%;
+    right: 5%;
+    width: 1%;
+    height: 1%;
+    animation: icon8moonbottom 5s ease 0s infinite;
+  }
+  .wrapper .icon.icon8 .planet {
+    top: 25%;
+    left: 24%;
+    width: 63%;
+    height: 63%;
+  }
+  .wrapper .icon.icon8 .ring {
+    top: 45%;
+    left: 15%;
+    width: 80%;
+    height: 25%;
+    border-radius: 50%;
+    border-color: transparent #a78247 #a78247 #a78247;
+    transform: rotate(17deg);
+    overflow: visible;
+    animation: icon8ring 5s ease 0s infinite alternate;
+  }
+  .wrapper .icon.icon8 .ring:after {
+    top: 80%;
+    left: 22%;
+    width: 10%;
+    padding-top: 10%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 #a78247 transparent transparent;
+    transform: rotate(45deg);
+  }
+  .wrapper .icon.icon8 .planetoid {
+    top: 25%;
+    left: 70%;
+    width: 20%;
+    height: 20%;
+    overflow: visible;
+    background: #303030;
+    animation: icon8planetoid 5s linear 0s infinite reverse;
+  }
+  .wrapper .icon.icon8 .planetoid:before {
+    top: -25%;
+    left: -25%;
+    width: 150%;
+    padding-top: 150%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+    border-color: #a78247 #a78247 transparent transparent;
+    transform: rotate(55deg);
+    background: transparent;
+  }
+  .wrapper .icon.icon8 .planetoid:after {
+    top: -40%;
+    left: 50%;
+    width: 20%;
+    padding-top: 20%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent #a78247;
+    transform: rotate(-35deg);
+    background: transparent;
+  }
+  .wrapper .icon.icon9 .planetoid {
+    top: 15%;
+    left: 27%;
+    width: 10%;
+    height: 10%;
+    overflow: visible;
+    animation: icon9planetoid 5s linear 0s infinite;
+  }
+  .wrapper .icon.icon9 .planetoid:before {
+    top: -50%;
+    left: 200%;
+    width: 1%;
+    padding-top: 1%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+    transform-origin: -450% -200%;
+    animation: icon9planetoid 5s ease 0s infinite reverse;
+  }
+  .wrapper .icon.icon9 .planetoid:after {
+    top: -20%;
+    left: 300%;
+    width: 15%;
+    padding-top: 15%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+    transform-origin: 150% 50%;
+    animation: icon9planetoid 5s ease 2.5s infinite;
+  }
+  .wrapper .icon.icon9 .flag {
+    top: 30%;
+    left: 40%;
+    width: 40%;
+    height: 25%;
+    background: #303030;
+  }
+  .wrapper .icon.icon9 .flag .square {
+    top: -0.1vw;
+    left: -0.1vw;
+    width: 45%;
+    height: calc(50%  + 2*0.1vw);
+  }
+  .wrapper .icon.icon9 .flag .line {
+    height: 1%;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon9 .flag .line.line1 {
+    top: 25%;
+    left: 40%;
+    width: 60%;
+  }
+  .wrapper .icon.icon9 .flag .line.line2 {
+    top: 50%;
+    left: 40%;
+    width: 60%;
+  }
+  .wrapper .icon.icon9 .flag .line.line3 {
+    top: 75%;
+    left: 0;
+    width: 100%;
+  }
+  .wrapper .icon.icon9 .pole {
+    top: 54%;
+    left: 40%;
+    width: 1%;
+    height: 30%;
+    border-color: transparent transparent transparent #a78247;
+  }
+  .wrapper .icon.icon9 .ground {
+    top: 84%;
+    left: 33%;
+    width: 46%;
+    height: 1%;
+    border-color: #a78247 transparent transparent transparent;
+    overflow: visible;
+  }
+  .wrapper .icon.icon9 .ground:before {
+    top: -0.1vw;
+    left: -25%;
+    height: 10%;
+    width: 10%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon9 .ground:after {
+    top: -0.5vw;
+    left: 65%;
+    width: 0.8vw;
+    padding-top: 0.8vw;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+    border-color: #a78247 #a78247 transparent transparent;
+    transform: rotate(-45deg);
+  }
+  .wrapper .icon.icon10 .orbit, .wrapper .icon.icon10 .planet {
+    border-radius: 50%;
+  }
+  .wrapper .icon.icon10 .orbit {
+    border-color: #a78247 #a78247 #a78247 transparent;
+    overflow: visible;
+  }
+  .wrapper .icon.icon10 .orbit:before {
+    top: -7.5%;
+    left: 30%;
+    width: 15%;
+    height: 15%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+    background: #303030;
+  }
+  .wrapper .icon.icon10 .orbit.orbit1 {
+    top: 17.5%;
+    left: 17.5%;
+    width: 65%;
+    height: 65%;
+    transform: rotate(150deg);
+    animation: icon10orbit 5s ease 0s infinite;
+  }
+  .wrapper .icon.icon10 .orbit.orbit2 {
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+    transform: rotate(50deg);
+    animation: icon10orbit 5s ease 0s infinite reverse;
+  }
+  .wrapper .icon.icon10 .planet {
+    top: 42.5%;
+    left: 42.5%;
+    width: 15%;
+    height: 15%;
+    animation: icon10planet 5s ease 0s infinite alternate;
+  }
+  .wrapper .icon.icon11 .planet {
+    top: 17.5%;
+    left: 17.5%;
+    width: 65%;
+    height: 65%;
+    overflow: visible;
+    animation: icon11planet 10s ease 0s infinite alternate;
+  }
+  .wrapper .icon.icon11 .planet:before {
+    top: -10%;
+    left: 73%;
+    width: 25%;
+    height: 25%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+    border-color: #a78247 #a78247 transparent #a78247;
+    transform: rotate(40deg);
+  }
+  .wrapper .icon.icon11 .planet .line {
+    height: 1%;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon11 .planet .line.line1 {
+    top: 7%;
+    right: 22%;
+    width: 25%;
+  }
+  .wrapper .icon.icon11 .planet .line.line2 {
+    top: 18%;
+    left: 10%;
+    width: 55%;
+  }
+  .wrapper .icon.icon11 .planet .line.line3 {
+    top: 30%;
+    left: 3%;
+    width: 94%;
+  }
+  .wrapper .icon.icon11 .planet .line.line4 {
+    top: 40%;
+    right: 0;
+    width: 35%;
+    overflow: visible;
+  }
+  .wrapper .icon.icon11 .planet .line.line4:before {
+    top: -0.1vw;
+    left: -60%;
+    width: 30%;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon11 .planet .line.line5 {
+    top: 50%;
+    left: 0;
+    width: 100%;
+  }
+  .wrapper .icon.icon11 .planet .line.line6 {
+    top: 58%;
+    left: 0;
+    width: 28%;
+    overflow: visible;
+  }
+  .wrapper .icon.icon11 .planet .line.line6:before {
+    top: -0.1vw;
+    left: 130%;
+    width: 30%;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon11 .planet .line.line7 {
+    top: 68%;
+    left: 3%;
+    width: 58%;
+    overflow: visible;
+  }
+  .wrapper .icon.icon11 .planet .line.line7:before {
+    top: -0.1vw;
+    left: 120%;
+    width: 40%;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon11 .planet .line.line7:after {
+    margin-top: -15%;
+    left: 100%;
+    padding: 8%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+  }
+  .wrapper .icon.icon11 .planet .line.line8 {
+    top: 80%;
+    right: 10%;
+    width: 25%;
+    overflow: visible;
+  }
+  .wrapper .icon.icon11 .planet .line.line8:before {
+    top: -0.1vw;
+    left: -70%;
+    width: 30%;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon11 .planet .line.line9 {
+    top: 93%;
+    left: 25%;
+    width: 25%;
+  }
+  .wrapper .icon.icon12 .planet {
+    top: 25%;
+    left: 10%;
+    width: 65%;
+    height: 65%;
+    animation: icon12planet 0.5s linear infinite alternate;
+  }
+  .wrapper .icon.icon12 .planet:before {
+    top: 17.5%;
+    left: 17.5%;
+    width: 65%;
+    height: 65%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+  }
+  .wrapper .icon.icon12 .line {
+    height: 1%;
+    border-color: #a78247 transparent transparent transparent;
+    transform-origin: top left;
+    transform: rotate(-45deg);
+    overflow: visible;
+  }
+  .wrapper .icon.icon12 .line.line1 {
+    top: 32%;
+    left: 22%;
+    width: 30%;
+    animation: icon12line1 0.5s ease infinite alternate;
+  }
+  .wrapper .icon.icon12 .line.line2 {
+    top: 63%;
+    left: 25%;
+    width: 20%;
+    animation: icon12line2 0.5s ease infinite alternate;
+  }
+  .wrapper .icon.icon12 .line.line2:before, .wrapper .icon.icon12 .line.line2:after {
+    top: -0.1vw;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon12 .line.line2:before {
+    width: 65%;
+    left: 145%;
+  }
+  .wrapper .icon.icon12 .line.line2:after {
+    width: 65%;
+    left: 250%;
+  }
+  .wrapper .icon.icon12 .line.line3 {
+    top: 63%;
+    left: 42%;
+    width: 20%;
+    animation: icon12line3 0.5s ease infinite alternate;
+  }
+  .wrapper .icon.icon12 .line.line3:before {
+    top: -0.2vw;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+    width: 145%;
+    left: 135%;
+  }
+  .wrapper .icon.icon12 .line.line4 {
+    top: 67%;
+    left: 55%;
+    width: 50%;
+    animation: icon12line4 0.5s ease infinite alternate;
+  }
+  .wrapper .icon.icon12 .line.line4:before {
+    top: -0.2vw;
+    left: 110%;
+    width: 10%;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon12 .line.line5 {
+    top: 80%;
+    left: 65%;
+    width: 50%;
+    animation: icon12line5 0.5s ease infinite alternate;
+  }
+  .wrapper .icon.icon13 .moon.bottom {
+    top: 75%;
+    right: 5%;
+    width: 1%;
+    height: 1%;
+    animation: icon13moonbottom 5s ease 0s infinite;
+  }
+  .wrapper .icon.icon13 .planet {
+    top: 17.5%;
+    left: 17.5%;
+    width: 65%;
+    height: 65%;
+  }
+  .wrapper .icon.icon13 .ring {
+    top: 38%;
+    left: 10%;
+    width: 80%;
+    height: 24%;
+    border-radius: 50%;
+    border-color: transparent #a78247 #a78247 #a78247;
+    transform: rotate(17deg);
+    animation: icon13ring 5s ease 0s infinite alternate;
+  }
+  .wrapper .icon.icon13 .planetoid {
+    top: 15%;
+    left: 60%;
+    width: 20%;
+    height: 20%;
+    background: #303030;
+  }
+  .wrapper .icon.icon13 .square {
+    top: 12%;
+    left: 45%;
+    width: 40%;
+    height: 26%;
+    border-radius: 0;
+    background: transparent !important;
+    overflow: visible;
+  }
+  .wrapper .icon.icon13 .square:before {
+    top: -10%;
+    left: 0;
+    width: 20%;
+    height: 5%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 #a78247 transparent transparent;
+    animation: icon13click 2.5s ease infinite alternate;
+  }
+  .wrapper .icon.icon14 .top {
+    top: 12.5%;
+    left: 10%;
+    width: 80%;
+    height: 10%;
+    border-color: transparent;
+    overflow: visible;
+  }
+  .wrapper .icon.icon14 .top .line {
+    top: 49%;
+    height: 2%;
+    width: 36%;
+    border-color: #a78247 transparent transparent transparent;
+    overflow: visible;
+  }
+  .wrapper .icon.icon14 .top .line:before {
+    margin-top: -25%;
+    padding: 18%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+  }
+  .wrapper .icon.icon14 .top .line.left {
+    left: 15%;
+    transform-origin: 100% 50%;
+    animation: icon14lineleft 5s linear 0s infinite alternate;
+  }
+  .wrapper .icon.icon14 .top .line.left:before {
+    margin-left: -50%;
+  }
+  .wrapper .icon.icon14 .top .line.right {
+    right: 15%;
+    transform-origin: 0% 50%;
+    animation: icon14lineright 5s linear 0s infinite alternate;
+  }
+  .wrapper .icon.icon14 .top .line.right:before {
+    margin-left: 100%;
+  }
+  .wrapper .icon.icon14 .top .square {
+    top: -0.1vw;
+    left: calc(45% - 0.1vw);
+    padding: 6%;
+    background: #303030;
+    z-index: 1;
+  }
+  .wrapper .icon.icon14 .planet {
+    top: 17.5%;
+    left: 17.5%;
+    width: 65%;
+    height: 65%;
+    border-color: #a78247 #a78247 transparent #a78247;
+    transform: rotate(15deg);
+    overflow: visible;
+    animation: icon14planet 5s ease 0s infinite alternate;
+  }
+  .wrapper .icon.icon14 .planet:after {
+    top: 75%;
+    width: 15%;
+    padding-top: 15%;
+    border: 0.1vw solid #a78247;
+    transform: rotate(-15deg);
+    background: #303030;
+  }
+  .wrapper .icon.icon14 .ring {
+    top: 37.5%;
+    left: 10%;
+    width: 80%;
+    height: 25%;
+    border-radius: 50%;
+    border-color: transparent #a78247 #a78247 #a78247;
+    transform: rotate(17deg);
+    animation: icon14ring 5s ease 0s infinite alternate;
+  }
+  .wrapper .icon.icon14 .moon {
+    top: 90%;
+    left: 10%;
+    width: 12%;
+    height: 12%;
+    animation: icon14moon 5s ease-in-out 0s infinite alternate;
+  }
+  .wrapper .icon.icon14 .pen {
+    top: 22%;
+    left: 30%;
+    width: 40%;
+    height: 65%;
+    border: 0;
+    overflow: visible;
+  }
+  .wrapper .icon.icon14 .pen .head.left {
+    top: 0;
+    left: 38%;
+    height: 65%;
+    width: 1%;
+    border-color: transparent transparent transparent #a78247;
+    transform-origin: top left;
+    transform: rotate(20deg);
+    overflow: visible;
+  }
+  .wrapper .icon.icon14 .pen .head.left:before {
+    top: 100%;
+    left: -0.15vw;
+    height: 40%;
+    width: 1%;
+    border: 0.1vw solid #a78247;
+    border-color: transparent transparent transparent #a78247;
+    transform-origin: top center;
+    transform: rotate(-60deg);
+  }
+  .wrapper .icon.icon14 .pen .head.right {
+    top: 0;
+    left: 60%;
+    height: 65%;
+    width: 1%;
+    border-color: transparent transparent transparent #a78247;
+    transform-origin: top center;
+    transform: rotate(-20deg);
+    overflow: visible;
+  }
+  .wrapper .icon.icon14 .pen .head.right:before {
+    top: 100%;
+    right: -0.15vw;
+    height: 40%;
+    width: 1%;
+    border: 0.1vw solid #a78247;
+    border-color: transparent transparent transparent #a78247;
+    transform-origin: top center;
+    transform: rotate(60deg);
+  }
+  .wrapper .icon.icon14 .pen .line {
+    top: 0;
+    left: 50%;
+    width: 1%;
+    height: 45%;
+    border-color: transparent transparent transparent #a78247;
+    overflow: visible;
+  }
+  .wrapper .icon.icon14 .pen .line:after {
+    top: 100%;
+    left: -0.2vw;
+    width: 0.2vw;
+    padding-top: 0.2vw;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+  }
+  .wrapper .icon.icon14 .pen .bottom {
+    top: 80%;
+    left: 18%;
+    width: 64%;
+    height: 15%;
+  }
+  .wrapper .icon.icon15 .planetoid {
+    top: 10%;
+    left: 20%;
+    width: 10%;
+    height: 10%;
+    overflow: visible;
+    animation: icon15planetoid 5s linear 0s infinite;
+  }
+  .wrapper .icon.icon15 .planetoid:before {
+    top: 110%;
+    left: -60%;
+    width: 1%;
+    height: 1%;
+    border: 0.1vw solid #a78247;
+    border-radius: 50%;
+  }
+  .wrapper .icon.icon15 .sattelite {
+    top: 20%;
+    left: 10%;
+    width: 100%;
+    height: 70%;
+    transform: rotate(-45deg);
+    border: 0;
+    animation: icon15sattelite 5s linear 0s infinite alternate;
+  }
+  .wrapper .icon.icon15 .sattelite .solarpanel {
+    top: 15%;
+    width: 30%;
+    height: 30%;
+    overflow: visible;
+    animation: icon15solarpanel 10s linear 0s infinite alternate;
+  }
+  .wrapper .icon.icon15 .sattelite .solarpanel:after {
+    top: 50%;
+    height: 1%;
+    width: 125%;
+    border: 0.1vw solid #a78247;
+    border-color: #a78247 transparent transparent transparent;
+  }
+  .wrapper .icon.icon15 .sattelite .solarpanel.left {
+    left: 0;
+  }
+  .wrapper .icon.icon15 .sattelite .solarpanel.right {
+    right: 0;
+  }
+  .wrapper .icon.icon15 .sattelite .solarpanel.right:after {
+    left: -30%;
+  }
+  .wrapper .icon.icon15 .sattelite .body {
+    top: 0;
+    left: 38%;
+    width: 25%;
+    height: 60%;
+    overflow: visible;
+  }
+  .wrapper .icon.icon15 .sattelite .body:after {
+    top: 70%;
+    left: -0.1vw;
+    width: 100%;
+    padding-top: 100%;
+    border: 0.1vw solid #a78247;
+    border-color: transparent #a78247 #a78247 transparent;
+    border-radius: 50%;
+    transform: rotate(45deg);
+  }
+  .wrapper .icon.icon15 .sattelite .dish {
+    top: 76%;
+    left: 40%;
+    width: 20%;
+    padding-top: 20%;
+    border-color: #a78247 #a78247 transparent transparent;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    overflow: visible;
+    animation: icon15dish 5s linear 0s infinite alternate;
+  }
+  .wrapper .icon.icon15 .sattelite .dish:before, .wrapper .icon.icon15 .sattelite .dish:after {
+    transform-origin: top left;
+    border: 0.1vw solid #a78247;
+  }
+  .wrapper .icon.icon15 .sattelite .dish:before {
+    left: 10%;
+    top: 10%;
+    width: 110%;
+    height: 0;
+    border-color: #a78247 transparent transparent transparent;
+    transform: rotate(45deg);
+  }
+  .wrapper .icon.icon15 .sattelite .dish:after {
+    left: 50%;
+    top: 50%;
+    width: 20%;
+    height: 0;
+    border-color: #a78247 transparent transparent transparent;
+    transform: rotate(135deg);
+  }
+  
+  .mosthearted {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    border: 0;
+  }
+  .mosthearted svg {
+    width: 15vw;
+    height: auto;
+  }
+  
+  @keyframes icon1moontop {
+    0% {
+      top: 10%;
+      right: 5%;
+      z-index: 0;
+    }
+    49% {
+      top: 60%;
+      right: 95%;
+      z-index: 0;
+    }
+    50% {
+      top: 60%;
+      right: 95%;
+      z-index: 1;
+    }
+    99% {
+      top: 10%;
+      right: 5%;
+      z-index: 1;
+    }
+    100% {
+      top: 10%;
+      right: 5%;
+      z-index: 0;
+    }
+  }
+  @keyframes icon1moonbottom {
+    0% {
+      top: 75%;
+      left: 15%;
+      z-index: 0;
+    }
+    49% {
+      top: 40%;
+      left: 95%;
+      z-index: 0;
+    }
+    50% {
+      top: 40%;
+      left: 95%;
+      z-index: -1;
+    }
+    99% {
+      top: 75%;
+      left: 15%;
+      z-index: -1;
+    }
+    100% {
+      top: 75%;
+      left: 15%;
+      z-index: 0;
+    }
+  }
+  @keyframes icon2planetoid {
+    0% {
+      top: 15%;
+      left: 90%;
+      transform: rotate(0deg);
+      z-index: 0;
+    }
+    49% {
+      top: 80%;
+      left: 5%;
+      transform: rotate(720deg);
+      z-index: 0;
+    }
+    50% {
+      top: 80%;
+      left: 5%;
+      transform: rotate(720deg);
+      z-index: 1;
+    }
+    99% {
+      top: 15%;
+      left: 90%;
+      transform: rotate(1440deg);
+      z-index: 1;
+    }
+    100% {
+      top: 15%;
+      left: 90%;
+      transform: rotate(1440deg);
+      z-index: 0;
+    }
+  }
+  @keyframes icon2ring {
+    0% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(-30deg);
+    }
+  }
+  @keyframes icon3hood {
+    0% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+  @keyframes icon3middle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  @keyframes icon4planet {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes icon5body {
+    0% {
+      top: 0%;
+      left: 15%;
+    }
+    100% {
+      top: 0.5%;
+      left: 15.5%;
+    }
+  }
+  @keyframes icon5line1 {
+    0% {
+      top: 60%;
+      left: 4%;
+    }
+    100% {
+      top: 60.5%;
+      left: 4.5%;
+    }
+  }
+  @keyframes icon5line2 {
+    0% {
+      top: 50%;
+      left: 5.5%;
+    }
+    100% {
+      top: 50.5%;
+      left: 6%;
+    }
+  }
+  @keyframes icon5line3 {
+    0% {
+      top: 80%;
+      left: 17%;
+    }
+    100% {
+      top: 80.5%;
+      left: 17.5%;
+    }
+  }
+  @keyframes icon6moontop {
+    0% {
+      top: 15%;
+      left: 10%;
+      z-index: 0;
+    }
+    49% {
+      top: 60%;
+      left: 95%;
+      z-index: 0;
+    }
+    50% {
+      top: 60%;
+      left: 95%;
+      z-index: 1;
+    }
+    99% {
+      top: 15%;
+      left: 10%;
+      z-index: 1;
+    }
+    100% {
+      top: 15%;
+      left: 10%;
+      z-index: 0;
+    }
+  }
+  @keyframes icon6moonbottom {
+    0% {
+      top: 85%;
+      left: 95%;
+      z-index: 0;
+    }
+    49% {
+      top: 40%;
+      left: 5%;
+      z-index: 0;
+    }
+    50% {
+      top: 40%;
+      left: 5%;
+      z-index: -1;
+    }
+    99% {
+      top: 85%;
+      left: 95%;
+      z-index: -1;
+    }
+    100% {
+      top: 85%;
+      left: 95%;
+      z-index: 0;
+    }
+  }
+  @keyframes icon6ring {
+    0% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(30deg);
+    }
+  }
+  @keyframes icon6ringplanet {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes icon7telescope {
+    0% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(-30deg);
+    }
+  }
+  @keyframes icon8moontop {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes icon8moonbottom {
+    0% {
+      top: 85%;
+      left: 95%;
+      z-index: 0;
+    }
+    49% {
+      top: 40%;
+      left: 5%;
+      z-index: 0;
+    }
+    50% {
+      top: 40%;
+      left: 5%;
+      z-index: -1;
+    }
+    99% {
+      top: 85%;
+      left: 95%;
+      z-index: -1;
+    }
+    100% {
+      top: 85%;
+      left: 95%;
+      z-index: 0;
+    }
+  }
+  @keyframes icon8ring {
+    0% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+  @keyframes icon8planetoid {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes icon9planetoid {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes icon10orbit {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes icon10planet {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.25);
+    }
+  }
+  @keyframes icon11planet {
+    0% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+  @keyframes icon12planet {
+    0% {
+      top: 25%;
+      left: 10%;
+    }
+    100% {
+      top: 25.5%;
+      left: 10.5%;
+    }
+  }
+  @keyframes icon12line1 {
+    0% {
+      top: 32%;
+      left: 22%;
+    }
+    100% {
+      top: 32.5%;
+      left: 22.5%;
+    }
+  }
+  @keyframes icon12line2 {
+    0% {
+      top: 63%;
+      left: 25%;
+    }
+    100% {
+      top: 63.5%;
+      left: 25.5%;
+    }
+  }
+  @keyframes icon12line3 {
+    0% {
+      top: 63%;
+      left: 42%;
+    }
+    100% {
+      top: 63.5%;
+      left: 42.5%;
+    }
+  }
+  @keyframes icon12line4 {
+    0% {
+      top: 67%;
+      left: 55%;
+    }
+    100% {
+      top: 67.5%;
+      left: 55.5%;
+    }
+  }
+  @keyframes icon12line5 {
+    0% {
+      top: 80%;
+      left: 65%;
+    }
+    100% {
+      top: 81%;
+      left: 66%;
+    }
+  }
+  @keyframes icon13moonbottom {
+    0% {
+      top: 85%;
+      left: 95%;
+      z-index: 0;
+    }
+    49% {
+      top: 10%;
+      left: 5%;
+      z-index: 0;
+    }
+    50% {
+      top: 10%;
+      left: 5%;
+      z-index: -1;
+    }
+    99% {
+      top: 85%;
+      left: 95%;
+      z-index: -1;
+    }
+    100% {
+      top: 85%;
+      left: 95%;
+      z-index: 0;
+    }
+  }
+  @keyframes icon13ring {
+    0% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(30deg);
+    }
+  }
+  @keyframes icon13click {
+    0% {
+      transform: scaley(1);
+    }
+    100% {
+      transform: scaley(0);
+    }
+  }
+  @keyframes icon14lineleft {
+    0% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(5deg);
+    }
+  }
+  @keyframes icon14lineright {
+    0% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(5deg);
+    }
+  }
+  @keyframes icon14planet {
+    0% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(20deg);
+    }
+  }
+  @keyframes icon14ring {
+    0% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+  @keyframes icon14moon {
+    0% {
+      left: 5%;
+    }
+    100% {
+      left: 95%;
+    }
+  }
+  @keyframes icon15sattelite {
+    0% {
+      transform: rotate(-40deg);
+    }
+    100% {
+      transform: rotate(-50deg);
+    }
+  }
+  @keyframes icon15planetoid {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes icon15solarpanel {
+    0% {
+      transform: scaley(1);
+    }
+    100% {
+      transform: scaley(0.75);
+    }
+  }
+  @keyframes icon15dish {
+    0% {
+      transform: rotate(-60deg);
+    }
+    100% {
+      transform: rotate(-30deg);
+    }
+  }
+  
