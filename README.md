@@ -43,7 +43,7 @@ Time: 11:00 AM - 3:00 PM
 
 `$ git clone https://github.com/neoito-hub/hackathon-css-animation-20180319.git`
 
-`$ cd /hackathon-css-animation-20180319`
+`$ cd hackathon-css-animation-20180319`
 
 `$ sudo npm install -g http-server`
 
