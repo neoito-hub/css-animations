@@ -11,6 +11,9 @@ import { AppComponent } from './app.component';
 import { ListingDataComponent } from './listing-data/listing-data.component';
 import { AnimatedIconsComponent } from './animated-icons/animated-icons.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
+import { AppLayoutComponent } from './app-layout/app-layout.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +26,10 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     ValidationEffectsComponent,
     ButtonComponent,
     InputAnimationComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    AppLayoutComponent
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, AppRoutingModule, RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
